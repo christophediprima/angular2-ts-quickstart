@@ -1,0 +1,180 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'typescript@^1.5.0-beta' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose cache add [ 'typescript@^1.5.0-beta', null ]
+5 verbose cache add name=undefined spec="typescript@^1.5.0-beta" args=["typescript@^1.5.0-beta",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'typescript@^1.5.0-beta',
+6 verbose parsed url   path: 'typescript@^1.5.0-beta',
+6 verbose parsed url   href: 'typescript@^1.5.0-beta' }
+7 verbose cache add name="typescript" spec="^1.5.0-beta" args=["typescript","^1.5.0-beta"]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '^1.5.0-beta',
+8 verbose parsed url   path: '^1.5.0-beta',
+8 verbose parsed url   href: '^1.5.0-beta' }
+9 verbose addNamed [ 'typescript', '^1.5.0-beta' ]
+10 verbose addNamed [ null, '>=1.5.0-beta <2.0.0-0' ]
+11 silly lockFile 9699be47-typescript-1-5-0-beta typescript@^1.5.0-beta
+12 verbose lock typescript@^1.5.0-beta /Users/christophediprima/.npm/9699be47-typescript-1-5-0-beta.lock
+13 silly addNameRange { name: 'typescript',
+13 silly addNameRange   range: '>=1.5.0-beta <2.0.0-0',
+13 silly addNameRange   hasData: false }
+14 verbose request where is /typescript
+15 verbose request registry https://registry.npmjs.org/
+16 verbose request id d3874d68081a1e19
+17 verbose url raw /typescript
+18 verbose url resolving [ 'https://registry.npmjs.org/', './typescript' ]
+19 verbose url resolved https://registry.npmjs.org/typescript
+20 verbose request where is https://registry.npmjs.org/typescript
+21 info trying registry request attempt 1 at 15:27:51
+22 http GET https://registry.npmjs.org/typescript
+23 http 200 https://registry.npmjs.org/typescript
+24 silly registry.get cb [ 200,
+24 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly registry.get     etag: '"6C3E8HQ8TG9DOI05V1LDDTXSX"',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'cache-control': 'max-age=60',
+24 silly registry.get     'content-length': '25127',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     date: 'Wed, 06 May 2015 13:27:52 GMT',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     age: '0',
+24 silly registry.get     connection: 'keep-alive',
+24 silly registry.get     'x-served-by': 'cache-lhr6335-LHR',
+24 silly registry.get     'x-cache': 'HIT',
+24 silly registry.get     'x-cache-hits': '1',
+24 silly registry.get     'x-timer': 'S1430918871.911974,VS0,VE157',
+24 silly registry.get     vary: 'Accept' } ]
+25 silly addNameRange number 2 { name: 'typescript',
+25 silly addNameRange   range: '>=1.5.0-beta <2.0.0-0',
+25 silly addNameRange   hasData: true }
+26 silly addNameRange versions [ 'typescript',
+26 silly addNameRange   [ '0.8.0',
+26 silly addNameRange     '0.8.1',
+26 silly addNameRange     '0.8.1-1',
+26 silly addNameRange     '0.8.2',
+26 silly addNameRange     '0.8.3',
+26 silly addNameRange     '0.9.0',
+26 silly addNameRange     '0.9.0-1',
+26 silly addNameRange     '0.9.1',
+26 silly addNameRange     '0.9.1-1',
+26 silly addNameRange     '0.9.5',
+26 silly addNameRange     '0.9.7',
+26 silly addNameRange     '1.0.0',
+26 silly addNameRange     '1.0.1',
+26 silly addNameRange     '1.1.0-1',
+26 silly addNameRange     '1.3.0',
+26 silly addNameRange     '1.4.1',
+26 silly addNameRange     '1.5.0-alpha',
+26 silly addNameRange     '1.5.0-beta' ] ]
+27 verbose addNamed [ 'typescript', '1.5.0-beta' ]
+28 verbose addNamed [ '1.5.0-beta', '1.5.0-beta' ]
+29 silly lockFile 07adb830-typescript-1-5-0-beta typescript@1.5.0-beta
+30 verbose lock typescript@1.5.0-beta /Users/christophediprima/.npm/07adb830-typescript-1-5-0-beta.lock
+31 silly lockFile 237833a7-script-typescript-1-5-0-beta-tgz https://registry.npmjs.org/typescript/-/typescript-1.5.0-beta.tgz
+32 verbose lock https://registry.npmjs.org/typescript/-/typescript-1.5.0-beta.tgz /Users/christophediprima/.npm/237833a7-script-typescript-1-5-0-beta-tgz.lock
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/typescript/-/typescript-1.5.0-beta.tgz',
+33 verbose addRemoteTarball   '702cfc65692538bd5de273ffd49a86d5fc37598f' ]
+34 info retry fetch attempt 1 at 15:27:52
+35 verbose fetch to= /var/folders/yc/19g0fsbn3j91d75c3pswc9xr0000gn/T/npm-78287-exjk3A8K/registry.npmjs.org/typescript/-/typescript-1.5.0-beta.tgz
+36 http GET https://registry.npmjs.org/typescript/-/typescript-1.5.0-beta.tgz
+37 http 200 https://registry.npmjs.org/typescript/-/typescript-1.5.0-beta.tgz
+38 silly lockFile 237833a7-script-typescript-1-5-0-beta-tgz https://registry.npmjs.org/typescript/-/typescript-1.5.0-beta.tgz
+39 silly lockFile 237833a7-script-typescript-1-5-0-beta-tgz https://registry.npmjs.org/typescript/-/typescript-1.5.0-beta.tgz
+40 silly lockFile 07adb830-typescript-1-5-0-beta typescript@1.5.0-beta
+41 silly lockFile 07adb830-typescript-1-5-0-beta typescript@1.5.0-beta
+42 silly lockFile 9699be47-typescript-1-5-0-beta typescript@^1.5.0-beta
+43 silly lockFile 9699be47-typescript-1-5-0-beta typescript@^1.5.0-beta
+44 silly resolved [ { name: 'typescript',
+44 silly resolved     author: { name: 'Microsoft Corp.' },
+44 silly resolved     homepage: 'http://typescriptlang.org/',
+44 silly resolved     version: '1.5.0-beta',
+44 silly resolved     licenses: [ [Object] ],
+44 silly resolved     description: 'TypeScript is a language for application scale JavaScript development',
+44 silly resolved     keywords: [ 'TypeScript', 'Microsoft', 'compiler', 'language', 'javascript' ],
+44 silly resolved     bugs: { url: 'https://github.com/Microsoft/TypeScript/issues' },
+44 silly resolved     repository:
+44 silly resolved      { type: 'git',
+44 silly resolved        url: 'https://github.com/Microsoft/TypeScript.git' },
+44 silly resolved     preferGlobal: true,
+44 silly resolved     main: './bin/typescript.js',
+44 silly resolved     bin: { tsc: './bin/tsc', tsserver: './bin/tsserver' },
+44 silly resolved     engines: { node: '>=0.8.0' },
+44 silly resolved     devDependencies:
+44 silly resolved      { jake: 'latest',
+44 silly resolved        mocha: 'latest',
+44 silly resolved        chai: 'latest',
+44 silly resolved        browserify: 'latest',
+44 silly resolved        istanbul: 'latest' },
+44 silly resolved     scripts: { test: 'jake runtests' },
+44 silly resolved     gitHead: 'c233073d02536b33b3848541b538ad762c4729ba',
+44 silly resolved     _id: 'typescript@1.5.0-beta',
+44 silly resolved     _shasum: '702cfc65692538bd5de273ffd49a86d5fc37598f',
+44 silly resolved     _from: 'typescript@^1.5.0-beta',
+44 silly resolved     _npmVersion: '1.4.28',
+44 silly resolved     _npmUser: { name: 'typescript', email: 'typescript@microsoft.com' },
+44 silly resolved     maintainers: [ [Object] ],
+44 silly resolved     dist:
+44 silly resolved      { shasum: '702cfc65692538bd5de273ffd49a86d5fc37598f',
+44 silly resolved        tarball: 'http://registry.npmjs.org/typescript/-/typescript-1.5.0-beta.tgz' },
+44 silly resolved     directories: {},
+44 silly resolved     _resolved: 'https://registry.npmjs.org/typescript/-/typescript-1.5.0-beta.tgz' } ]
+45 info install typescript@1.5.0-beta into /usr/local/lib
+46 info installOne typescript@1.5.0-beta
+47 verbose lib/node_modules/typescript unbuild
+48 verbose tar unpack /Users/christophediprima/.npm/typescript/1.5.0-beta/package.tgz
+49 silly lockFile 2d878377-ocal-lib-node-modules-typescript tar:///usr/local/lib/node_modules/typescript
+50 verbose lock tar:///usr/local/lib/node_modules/typescript /Users/christophediprima/.npm/2d878377-ocal-lib-node-modules-typescript.lock
+51 silly lockFile 6582a082-ypescript-1-5-0-beta-package-tgz tar:///Users/christophediprima/.npm/typescript/1.5.0-beta/package.tgz
+52 verbose lock tar:///Users/christophediprima/.npm/typescript/1.5.0-beta/package.tgz /Users/christophediprima/.npm/6582a082-ypescript-1-5-0-beta-package-tgz.lock
+53 silly gunzTarPerm modes [ '755', '644' ]
+54 error Error: EACCES, mkdir '/usr/local/lib/node_modules/typescript'
+54 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/typescript']
+54 error   errno: 3,
+54 error   code: 'EACCES',
+54 error   path: '/usr/local/lib/node_modules/typescript',
+54 error   fstream_type: 'Directory',
+54 error   fstream_path: '/usr/local/lib/node_modules/typescript',
+54 error   fstream_class: 'DirWriter',
+54 error   fstream_stack:
+54 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+54 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+54 error      'Object.oncomplete (fs.js:108:15)' ] }
+55 error Please try running this command again as root/Administrator.
+56 error System Darwin 14.3.0
+57 error command "node" "/usr/local/bin/npm" "install" "-g" "typescript@^1.5.0-beta"
+58 error cwd /Users/christophediprima/Projects/angular2-quickstart/ts-quickstart
+59 error node -v v0.10.36
+60 error npm -v 1.4.28
+61 error path /usr/local/lib/node_modules/typescript
+62 error fstream_path /usr/local/lib/node_modules/typescript
+63 error fstream_type Directory
+64 error fstream_class DirWriter
+65 error code EACCES
+66 error errno 3
+67 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/typescript'
+68 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+68 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+68 error fstream_stack Object.oncomplete (fs.js:108:15)
+69 verbose exit [ 3, true ]

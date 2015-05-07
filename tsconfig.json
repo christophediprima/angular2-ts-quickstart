@@ -1,0 +1,23 @@
+{
+    "version": "1.5.0",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./friend.ts",
+        "./friendsList.ts",
+        "./services/singletons/FriendsStore.ts",
+        "./summary.ts",
+        "./typings/angular2/angular2.d.ts"
+    ]
+}
