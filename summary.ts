@@ -11,7 +11,7 @@ import {FriendsStore} from 'services/singletons/FriendsStore';
   template: `
    <div>
      <li *for="#friend of friendsStore.getFriends(); #i = index">
-       <friend [name]="friend.name" [index]="i" [readMode]="true"></friend>
+       <friend [name]="friend.name" [index]="i"></friend>
      </li>
    </div>
 `,

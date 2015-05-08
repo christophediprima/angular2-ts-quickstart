@@ -1,4 +1,4 @@
-if (typeof __decorate !== "function") __decorate = function (decorators, target, key, desc) {
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") return Reflect.decorate(decorators, target, key, desc);
     switch (arguments.length) {
         case 2: return decorators.reduceRight(function(o, d) { return (d && d(o)) || o; }, target);
@@ -6,7 +6,7 @@ if (typeof __decorate !== "function") __decorate = function (decorators, target,
         case 4: return decorators.reduceRight(function(o, d) { return (d && d(target, key, o)) || o; }, desc);
     }
 };
-if (typeof __metadata !== "function") __metadata = function (k, v) {
+var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /// <reference path="typings/angular2/angular2.d.ts" />
@@ -14,7 +14,6 @@ var angular2_1 = require('angular2/angular2');
 var FriendComponent = (function () {
     function FriendComponent() {
         this.editMode = false;
-        this.readMode = false;
     }
     FriendComponent.prototype.removeFriend = function (index) {
         this.store.removeFriend(index);
@@ -26,6 +25,11 @@ var FriendComponent = (function () {
             this.editMode = false;
         }
     };
+    FriendComponent.prototype.goEditMode = function () {
+        if (this.store) {
+            this.editMode = true;
+        }
+    };
     FriendComponent = __decorate([
         angular2_1.Component({
             selector: 'friend',
@@ -33,11 +37,10 @@ var FriendComponent = (function () {
                 'name': 'name',
                 'store': 'store',
                 'index': 'index',
-                'readMode': 'readMode'
             }
         }),
         angular2_1.View({
-            template: "\n   <div>\n    <div [hidden]=\"editMode\"><span (click)=\"editMode=true\">{{ name }}</span> <a [hidden]=\"readMode\" href=\"javascript:;\" (click)=\"removeFriend(index)\">x</a></div>\n    <div [hidden]=\"!editMode\"><input #newName [value]=\"name\" [hidden]=\"!editMode\" (keyup)=\"doneTyping($event)\"> <a href=\"javascript:;\" (click)=\"editMode=false\">Cancel</a></div>\n   </div>\n"
+            template: "\n   <div>\n    <div [hidden]=\"editMode\"><span (click)=\"goEditMode()\">{{ name }}</span> <a [hidden]=\"!store\" href=\"javascript:;\" (click)=\"removeFriend(index)\">x</a></div>\n    <div [hidden]=\"!editMode\"><input #newName [value]=\"name\" [hidden]=\"!editMode\" (keyup)=\"doneTyping($event)\"> <a href=\"javascript:;\" (click)=\"editMode=false\">Cancel</a></div>\n   </div>\n"
         }), 
         __metadata('design:paramtypes', [])
     ], FriendComponent);
