@@ -15,20 +15,16 @@ var friend_1 = require('friend');
 var FriendsStore_1 = require('services/singletons/FriendsStore');
 var SummaryComponent = (function () {
     function SummaryComponent() {
+        this.friendsStore = FriendsStore_1.FriendsStore.getInstance();
     }
-    SummaryComponent.prototype.construct = function () {
-    };
     SummaryComponent = __decorate([
         angular2_1.Component({
             selector: 'summary',
-            services: [FriendsStore_1.FriendsStore],
-            properties: {
-                'friendsStore': 'store'
-            }
+            services: [FriendsStore_1.FriendsStore]
         }),
         angular2_1.View({
-            template: "\n   <div>\n     <li *for=\"#friend of friendsStore.getFriends(); #i = index\">\n       <friend [name]=\"friend.name\" [store]=\"friendsStore\" [index]=\"i\"></friend>\n     </li>\n   </div>\n",
-            directives: [angular2_1.For, angular2_1.If, friend_1.FriendComponent]
+            template: "\n   <div>\n     <li *for=\"#friend of friendsStore.getFriends(); #i = index\">\n       <friend [name]=\"friend.name\" [index]=\"i\" [readMode]=\"true\"></friend>\n     </li>\n   </div>\n",
+            directives: [angular2_1.For, friend_1.FriendComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], SummaryComponent);

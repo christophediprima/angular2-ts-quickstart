@@ -21,7 +21,7 @@ import {FriendsStore} from 'services/singletons/FriendsStore';
    <p *if="friendsStore.getFriends().length > 3">You have many friends!</p>
    <input placeholder="Add Friend" #friendname (keyup)="doneTyping($event)">
    <p>Résumé:</p>
-   <summary [store]="friendsStore"></summary>
+   <summary></summary>
 `,
  directives: [For, If,FriendComponent,SummaryComponent]
 })

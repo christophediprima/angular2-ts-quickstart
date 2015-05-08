@@ -1,27 +1,26 @@
 /// <reference path="typings/angular2/angular2.d.ts" />
-import {Component, View, bootstrap, For, If} from 'angular2/angular2';
+import {Component, View, For} from 'angular2/angular2';
 import {FriendComponent} from 'friend';
 import {FriendsStore} from 'services/singletons/FriendsStore';
 
 @Component({
  selector: 'summary',
- services: [FriendsStore],
- properties: {
-   'friendsStore' : 'store'
- }
+ services: [FriendsStore]
 })
 @View({
   template: `
    <div>
      <li *for="#friend of friendsStore.getFriends(); #i = index">
-       <friend [name]="friend.name" [store]="friendsStore" [index]="i"></friend>
+       <friend [name]="friend.name" [index]="i" [readMode]="true"></friend>
      </li>
    </div>
 `,
- directives: [For, If,FriendComponent]
+ directives: [For, FriendComponent]
 })
 
 export class SummaryComponent {
-  construct(){
+  friendsStore:FriendsStore;
+  constructor(){
+    this.friendsStore = FriendsStore.getInstance();
   }
 }

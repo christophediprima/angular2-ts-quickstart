@@ -8,13 +8,14 @@ import {FriendsStore} from 'services/singletons/FriendsStore';
  properties: {
    'name' : 'name',
    'store': 'store',
-   'index': 'index'
+   'index': 'index',
+   'readMode': 'readMode'
  }
 })
 @View({
   template: `
    <div>
-    <div [hidden]="editMode"><span (click)="editMode=true">{{ name }}</span> <a href="javascript:;" (click)="removeFriend(index)">x</a></div>
+    <div [hidden]="editMode"><span (click)="editMode=true">{{ name }}</span> <a [hidden]="readMode" href="javascript:;" (click)="removeFriend(index)">x</a></div>
     <div [hidden]="!editMode"><input #newName [value]="name" [hidden]="!editMode" (keyup)="doneTyping($event)"> <a href="javascript:;" (click)="editMode=false">Cancel</a></div>
    </div>
 `
@@ -26,6 +27,7 @@ export class FriendComponent {
  newName:string;
  index:number;
  editMode:Boolean = false;
+ readMode:Boolean = false;
 
  constructor() {
 

@@ -32,7 +32,7 @@ var FriendsListComponent = (function () {
             services: [FriendsStore_1.FriendsStore]
         }),
         angular2_1.View({
-            template: "\n   <p>My name: {{ myName }}</p>\n   <p>Current time: {{ time }}</p>\n   <p>Friends:</p>\n   <ul>\n    <li *for=\"#friend of friendsStore.getFriends(); #i = index\">\n      <friend [name]=\"friend.name\" [store]=\"friendsStore\" [index]=\"i\"></friend>\n    </li>\n   </ul>\n   <p *if=\"friendsStore.getFriends().length > 3\">You have many friends!</p>\n   <input placeholder=\"Add Friend\" #friendname (keyup)=\"doneTyping($event)\">\n   <p>R\u00E9sum\u00E9:</p>\n   <summary [store]=\"friendsStore\"></summary>\n",
+            template: "\n   <p>My name: {{ myName }}</p>\n   <p>Current time: {{ time }}</p>\n   <p>Friends:</p>\n   <ul>\n    <li *for=\"#friend of friendsStore.getFriends(); #i = index\">\n      <friend [name]=\"friend.name\" [store]=\"friendsStore\" [index]=\"i\"></friend>\n    </li>\n   </ul>\n   <p *if=\"friendsStore.getFriends().length > 3\">You have many friends!</p>\n   <input placeholder=\"Add Friend\" #friendname (keyup)=\"doneTyping($event)\">\n   <p>R\u00E9sum\u00E9:</p>\n   <summary></summary>\n",
             directives: [angular2_1.For, angular2_1.If, friend_1.FriendComponent, summary_1.SummaryComponent]
         }), 
         __metadata('design:paramtypes', [])
